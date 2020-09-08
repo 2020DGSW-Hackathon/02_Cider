@@ -3,22 +3,22 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./Sign.css" />
+        <link rel="stylesheet" href="../assets/css/SignUp.css" />
         <title></title>
     </head>
     <body>
         <div>
-            <img
-                src="/frontend/assets/images/Coworking.svg"
-                alt="일하는 사진"
-            />
+            <img src="" alt="일하는 사진" />
         </div>
         <div class="wrap">
             <div></div>
             <div class="inputs">
                 <form action="">
-                    <div class="login_ment">사이다에 로그인 해주세요!</div>
+                    <div class="login_ment">
+                        회원가입으로 사이다와 함께 해주세요!
+                    </div>
                     <div>
+                        <div class="input_text">ID:</div>
                         <input
                             type="id"
                             class="input"
@@ -26,19 +26,22 @@
                         />
                     </div>
                     <div>
+                        <div class="input_text">PW:</div>
                         <input
                             type="password"
                             class="input"
                             placeholder="비밀번호를 입력하세요"
                         />
                     </div>
-                    <div class="signUp">
-                        <a href="./SignUp.html">회원가입 할래요!</a>
+                    <div class="grade">
+                        학년<input type="text" class="select_school_id" />
+                        반<input type="text" class="select_school_id" />
+                        번호<input type="text" class="select_school_id" />
                     </div>
                     <input
                         type="submit"
                         class="input submit_button"
-                        value="로그인"
+                        value="회원가입"
                     />
                 </form>
             </div>
