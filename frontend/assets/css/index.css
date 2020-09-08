@@ -20,19 +20,29 @@ display: block;
 clear:both;
 }
 
-.menua {
+.menu-item {
 display: block;
 color: #848484;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
+transition: 0.3s;
 }
 .active {
 color:#04E889;   
 border-bottom:2px solid #04E889; 
 }
-.menua:hover:not(.active) {
+.menu-item:hover:not(.active) {
 color:#04E889;
+cursor: pointer;
+font-weight: bold;
+}
+
+.menu-item-underline {
+    display: flex;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #04E889;
 }
 
 .Header {
