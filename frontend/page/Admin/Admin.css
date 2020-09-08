@@ -6,12 +6,12 @@ li {
     margin: 50px 0px 0px 0px;
 }
 
-.Admin__wrap {}
-
-.Admin__wrap-card {}
+.Admin__wrap {
+    text-align: center;
+}
 
 .Admin__wrap-card-item {
-    border: 2px solid #f1f1f1;
+    border: 3px solid #f1f1f1;
     border-radius: 5px;
     width:300px;
     height: 100px;
@@ -25,12 +25,14 @@ li {
 }
 
 .Admin-button {
-    width: 90px;
-    height: 40px;
+    width: 85px;
+    height: 35px;
     background-color: #f1f1f1;
     border: none;
     border-radius: 25px;
-    font-size: 16px;                                                                 x;
+    font-size: 16px;
+    position: relative;
+    top:20px;                                                             
 }
 
 .Admin-button:focus {
