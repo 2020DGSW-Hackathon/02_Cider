@@ -8,7 +8,7 @@
     display: inline;
 }
 form {
-    margin-top: 90px;
+    margin-top: 130px;
     float: right;
     margin-right: 200px;
     display: flex;
@@ -20,6 +20,14 @@ form {
     height: 650px;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+}
+.id,
+.pw {
+    font-size: 20px;
+}
+.id {
+    margin-right: 10px;
 }
 .login_ment {
     font-size: 25px;
@@ -55,7 +63,7 @@ a {
 .input:focus:not(.submit_button) {
     border: 2px solid #04e889;
 }
-.input::placeholder{
+.input::placeholder {
     font-size: 20px;
 }
 .wrap-background {
@@ -72,6 +80,21 @@ a {
     margin-top: 50px;
     border: 0px;
     font-weight: bold;
+}
+.select_school_id {
+    border: 2px solid #848484;
+    background-color: white;
+    border-radius: 5px;
+    width: 50px;
+    height: 40px;
+    margin: 30px;
+    outline: none;
+    transition: 0.3s ease;
+    font-size: 20px;
+    padding: 10px;
+}
+.select_school_id:focus {
+    border: 2px solid #04e889;
 }
 .submit_button:hover {
     background-color: #04e889;
