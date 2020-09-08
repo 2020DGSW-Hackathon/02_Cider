@@ -1,12 +1,11 @@
 import React from 'react';
-import '../styles/App.css';
-
-function App() {
+import { Switch, Route, Redirect } from 'react-router-dom';
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <>
+      <div>React Mobx PCC default Setting JS</div>
+    </>
   );
-}
+};
 
 export default App;
