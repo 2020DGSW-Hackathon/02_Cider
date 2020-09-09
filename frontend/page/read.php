@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="../assets/css/content.css" />
     </head>
     <body>
+    <form id="delForm" action="../lib/server.php" method="post">
+        <input type="hidden" name="action" id="action" value="res-delete">
+        <input type="hidden" name="idx" id="idx" value="<?=$idx?>">
+    </form>
         <div class="wrap">
         <div class="left_contents">
             <div class="profile_box">
@@ -65,14 +69,10 @@
                 <div class="icon">
                 <?= $row->tag ?>
                 </div>
-                <?php if(isset($_SESSION['userid']) == $row->username) {
-                    echo "<a href='./update.php?idx=<?php echo $row->idx?>'> <button> 수정 </button></a>
-                    <a href='#!' onclick='delread(<?=$idx?>); return false;'> <button> 삭제 </button></a>
-                    <a href='./list.php'> <button> 목록 </button></a>";
-                }
-                else{
-                    echo "<button>추천</button> <button>답변</button>";
-                } ?>
+                <a href='./update.php?idx=<?php echo $row->idx?>'> <button> 수정 </button></a>
+                <a href='#!' onclick='delread(<?=$idx?>); return false;'> <button> 삭제 </button></a>
+                <a href='./list.php'> <button> 목록 </button></a>
+            
                 
             </div>
             <ul class="answer">
@@ -93,4 +93,13 @@
         </div>
         </div>
     </body>
+    <script>
+        const delread = (idx) => {
+        if( ! idx ) return;
+        if( ! confirm("게시글을 삭제하시겠습니까?") ) return;
+        let frm = document.getElementById('delForm');
+        document.getElementById('idx').value= idx;
+        frm.submit();
+    }
+    </script>
 </html>

@@ -11,14 +11,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/Write.css">
+
 </head>
 <body>
 
 <form method="post" action="../lib/server.php">
     <input type="hidden" name="action" value="update">
-    <input type="text" name="idx" value="<?=$idx?>">
-    <input type="text" name="title" value="<?=$data['title']?>">
-    <select name="tag">
+    <input type="hidden" name="idx" value="<?=$idx?>">
+        <div class="Write">
+        <input class="Write-title" type="text" name="title">
+            <div class="Write-category">
+            <select name="tag">
     <?php
     $rows = fetchAll("SELECT * FROM tag");
 
@@ -29,9 +33,11 @@
     }
     ?>
     </select>
-    <input type="text" name="contents" value="<?=$data['contents']?>">
-
-    <button type="submit">Complete</button>
+            </div>
+        <input class="textarea" type="text" name="contents"></input> <br>    
+        <button type="submit">작성</button>
+        <a href="./list.php"><button>취소</button></a>
+</div>
 </form>
 </body>
 </html>
