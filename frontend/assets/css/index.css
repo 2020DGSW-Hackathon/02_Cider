@@ -63,13 +63,15 @@
   background-color: #04e889;
   background-color: red;
 }
-
 .CardList {
-  margin-left: 50%;
-  margin-top: 2%;
+  display: flex;
+  margin-left: 40%;
+  margin-top: 5%;
   height: 30px;
 }
-
+.second {
+  margin-left: 5%;
+}
 .CardList li {
   list-style: none;
   width: 350px;
@@ -78,7 +80,6 @@
   padding: 0px 0px 40px 20px;
   margin-bottom: 40px;
 }
-
 .CardList li span {
   display: inline-block;
   line-height: 2;
@@ -90,7 +91,7 @@
   display: block;
   font-size: 22px;
   font-weight: bold;
-  color: #0D010D;
+  color: #0d010d;
 }
 
 .CardList li .category {
