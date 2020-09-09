@@ -1,0 +1,66 @@
+*:focus {
+    outline: none;
+}
+
+.Write {
+    margin-left: 27.5%;
+    width: 80%;
+}
+
+.Write-title {
+    width: 800px;
+    font-size: 28px;
+    border: none;
+    border-bottom: 2px solid #848484;
+}
+
+.Write-category {
+    text-align: left;
+    width: 800px;
+    font-size: 14px;
+    display: block;
+    border-bottom: 2px solid #dbdbdb;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.Write-category input {
+    width: 300px;
+    border: 1px solid #dbdbdb;
+    padding: 5px;
+}
+
+.Write input::placeholder {
+    color: #dbdbdb;
+    font-weight: bold;
+}
+
+.Write ul {
+    list-style: none;
+}
+
+.Write ul li input {
+    display: inline;
+    border: 2px solid #dbdbdb;
+}
+
+textarea {
+    width: 800px;
+    height: 500px;
+    resize: none;
+    border: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+button {
+    width: 85px;
+    height: 35px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    position: relative;
+    top:20px;         
+    cursor: pointer;      
+}
