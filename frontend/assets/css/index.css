@@ -5,6 +5,10 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 .menu {
   list-style-type: none;
   margin: 0;
@@ -59,46 +63,45 @@
   z-index: 999999;
 }
 
-.menu li button.active {
-  background-color: #04e889;
-  background-color: red;
-}
 .CardList {
+  width: 60%;
+  height: auto;
   display: flex;
-  margin-left: 40%;
   margin-top: 5%;
   height: 30px;
+  float: right;
 }
 .second {
   margin-left: 5%;
 }
-.CardList li {
-  list-style: none;
+.card {
   width: 350px;
+  height: auto;
+  margin-right: 20px;
   border-top: 2.5px solid #dbdbdb;
   border-bottom: 2.5px solid #dbdbdb;
   padding: 0px 0px 40px 20px;
   margin-bottom: 40px;
 }
-.CardList li span {
+.card span {
   display: inline-block;
   line-height: 2;
   color: #848484;
   font-size: 14;
 }
 
-.CardList li .title {
+.card .title {
   display: block;
   font-size: 22px;
   font-weight: bold;
   color: #0d010d;
 }
 
-.CardList li .category {
+.card .category {
   display: block;
 }
 
-.CardList .line {
+.card .line {
   width: 75px;
   height: 5px;
   background-color: #04e889;
