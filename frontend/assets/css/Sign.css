@@ -5,16 +5,23 @@
     padding: 0px;
     font-family: "Noto Sans KR", sans-serif;
     user-select: none;
-    display: inline;
 }
-form {
-    margin-top: 130px;
+
+.wrap{
+    width: 100%;
+    height: auto;
+}
+
+.inputs{
+    width: 50%;
+    height: 650px;
     float: right;
-    margin-right: 200px;
+    margin-top: 100px;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    -webkit-box-shadow: 0px 1px 3px 0px rgba(13, 1, 13, 1);
-    -moz-box-shadow: 0px 1px 3px 0px rgba(13, 1, 13, 1);
     box-shadow: 0px 1px 3px 0px rgba(13, 1, 13, 1);
     width: 600px;
     height: 650px;
@@ -23,10 +30,19 @@ form {
     font-weight: bold;
 }
 
+.Sign-img {
+    width : 50%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-top: 100px;
+}
+
 .Sign-img img {
-    margin: 300px 100px 0px 100px;
-    width: 600px;
-    height: 500px;
+    width: 85%;
+    height: 80%;
 }
 
 .id,
@@ -92,8 +108,8 @@ a {
     border: 2px solid #848484;
     background-color: white;
     border-radius: 5px;
-    width: 50px;
-    height: 40px;
+    width: 40px;
+    height: 20px;
     margin: 30px;
     outline: none;
     transition: 0.3s ease;

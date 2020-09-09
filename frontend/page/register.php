@@ -10,32 +10,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/Sign.css" />
     <title>회원가입</title>
 </head>
 <body>
-    <h1 class="page-title">Register</h1>
-
-    <form method="post" action="">
-        <input type="hidden" name="action" value="register">
-        <h1 class="page-title">username</h1>
-        <input type="text" name="username" required>
-
-        <h1 class="page-title">id</h1>
-        <input type="text" name="id" required>
-
-        <h1 class="page-title">password</h1>
-        <input type="text" name="password" required>
-
-        <h1 class="page-title">grade</h1>
-        <input type="number" name="grade" required>
-
-        <h1 class="page-title">class</h1>
-        <input type="number" name="class" required>
-
-        <h1 class="page-title">number</h1>
-        <input type="number" name="number" required>
-        <button type="submit">complet</button>
-
-    </form>
+    <div class="wrap">
+        <div class="Sign-img">
+            <img src="../assets/images/Coworking.png" />
+        </div>
+        <div class="inputs">
+            <form method="post" action="">
+                <input type="hidden" name="action" value="register">
+                <div class="login_ment">
+                    회원가입으로 사이다와 함께 해주세요!
+                </div>
+                <div>
+                    <div class="id">ID:</div>
+                    <input
+                        type="id"
+                        class="input"
+                        placeholder="아이디를 입력하세요"
+                    />
+                </div>
+                <div>
+                    <div class="pw">PW:</div>
+                    <input
+                        type="password"
+                        class="input"
+                        placeholder="비밀번호를 입력하세요"
+                    />
+                </div>
+                <div class="grade">
+                    학년<input type="text" class="select_school_id" />
+                    반<input type="text" class="select_school_id" />
+                    번호<input type="text" class="select_school_id" />
+                </div>
+                <input
+                    type="submit"
+                    class="input submit_button"
+                    value="회원가입"
+                />
+                <div class="signUp">
+                    <a href="./login.php">로그인 할래요!</a>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
