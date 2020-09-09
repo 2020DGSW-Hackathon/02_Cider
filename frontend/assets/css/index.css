@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  border-bottom: 1px solid #848484;
+  display: flex;
+  justify-content: center;
+}
+.menu:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.menu-item {
+  display: block;
+  color: #848484;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: none;
+  background: none;
+  transition: 0.3s;
+}
+.menu-item:focus {
+  outline: none;
+}
+.active {
+  color: #04e889;
+  border-bottom: 2px solid #04e889;
+}
+.menu-item:hover:not(.active) {
+  color: #04e889;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu-item-underline {
+  display: flex;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #04e889;
+}
+.Header {
+  height: 20px;
+  background-color: #04e889;
+  padding: 10px;
+  color: #fafafa;
+  text-align: right;
+  padding-right: 15px;
+  z-index: 999999;
+}
+
+.CardList {
+  width: 60%;
+  height: auto;
+  display: flex;
+  margin-top: 5%;
+  height: 30px;
+  float: right;
+}
+.second {
+  margin-left: 5%;
+}
+.card {
+  width: 350px;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+  border-top: 2.5px solid #dbdbdb;
+  border-bottom: 2.5px solid #dbdbdb;
+  padding: 0px 0px 40px 20px;
+  margin-bottom: 40px;
+}
+.card span {
+  display: inline-block;
+  line-height: 2;
+  color: #848484;
+  font-size: 14;
+}
+
+.card .title {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0d010d;
+}
+
+.card .category {
+  display: block;
+}
+
+.card .line {
+  width: 75px;
+  height: 5px;
+  background-color: #04e889;
+  border-radius: 50px;
+  z-index: 1;
+  position: relative;
+  bottom: 4px;
+  right: 20px;
+}
+
+
+.logo{
+  position: absolute;
+  top: -8px;
+  left: 30px;
+  width: 55px;
+  height: 50px;
+}
+
+.add{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px ;
+  background-color: #04e889;
+  text-align: center;
+  line-height: 75px;
+  font-size: 50px;
+  color: white;
+}

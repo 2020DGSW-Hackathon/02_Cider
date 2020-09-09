@@ -1,0 +1,53 @@
+li {
+    list-style: none;
+}
+
+.Admin {
+    margin: 50px 0px 0px 0px;
+}
+
+.Admin__wrap {
+    text-align: center;
+}
+
+.Admin__wrap-card-item {
+    border: 3px solid #f1f1f1;
+    border-radius: 5px;
+    width:300px;
+    height: 100px;
+    padding: 20px;
+}
+
+.Admin__wrap-card-item-img {
+    border-radius: 50px;
+    background-color: #DBDBDB;
+    color: #ffffff;
+}
+
+.Admin-button {
+    width: 85px;
+    height: 35px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    position: relative;
+    top:20px;                                                             
+}
+
+.Admin-button:focus {
+    outline: 0;
+}
+
+.Admin-button:hover {
+    cursor: pointer;
+}
+
+.Admin-button-wrap {
+    margin: 20px 0px 0px 0px;
+}
+
+#Admin-button-primary {
+    background-color: #04E889;
+    color: #ffffff;
+}
