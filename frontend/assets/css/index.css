@@ -56,9 +56,54 @@
   color: #fafafa;
   text-align: right;
   padding-right: 15px;
+  z-index: 999999;
 }
 
-.Header ul .menu li button.active {
+.menu li button.active {
   background-color: #04e889;
   background-color: red;
+}
+
+.CardList {
+  margin-left: 50%;
+  margin-top: 2%;
+  height: 30px;
+}
+
+.CardList li {
+  list-style: none;
+  width: 350px;
+  border-top: 2.5px solid #dbdbdb;
+  border-bottom: 2.5px solid #dbdbdb;
+  padding: 0px 0px 40px 20px;
+  margin-bottom: 40px;
+}
+
+.CardList li span {
+  display: inline-block;
+  line-height: 2;
+  color: #848484;
+  font-size: 14;
+}
+
+.CardList li .title {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0D010D;
+}
+
+.CardList li .category {
+  display: block;
+}
+
+.CardList .line {
+  width: 75px;
+  height: 5px;
+  background-color: #04e889;
+  border-radius: 50px;
+  z-index: 1;
+  position: relative;
+  bottom: 4px;
+  right: 20px;
 }
