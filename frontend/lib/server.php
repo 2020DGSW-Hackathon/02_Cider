@@ -64,7 +64,7 @@ switch ($action){
       case 'delete' :
         $sql = "DELETE FROM question WHERE idx = ?";
         $execArr = [$idx];
-        $url = "../page/list.php";
+        $url = "../index.php";
         break;
 
 }
