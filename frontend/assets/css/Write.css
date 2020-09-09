@@ -44,7 +44,7 @@
     border: 2px solid #dbdbdb;
 }
 
-textarea {
+.textarea {
     width: 800px;
     height: 500px;
     resize: none;

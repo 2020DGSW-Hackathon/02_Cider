@@ -7,11 +7,12 @@
 
   </head>
   <body>
+    <img class="logo" src="assets/images/사이다로고_white.png">
     <?php if(!isset($_SESSION['userid'])) {
         echo "<a href='page/login.php'><div class='Header'>로그인 및 회원가입</div></a>";
     }
     else{
-        echo "<a href='page/logout.php'><div class='Header'>로그아웃</div></a>";
+        echo "<a href='backend/logout.php'><div class='Header'>로그아웃</div></a>";
     } ?>
 
     <ul class="menu">
@@ -92,5 +93,6 @@
       }
       ?>
     </div>
+    <a href="page/Write.php"><div class="add">+</div></a>
   </body>
 </html>

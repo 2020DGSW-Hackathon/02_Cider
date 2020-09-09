@@ -65,9 +65,15 @@
                 <div class="icon">
                 <?= $row->tag ?>
                 </div>
-                <a href="./update.php?idx=<?php echo $row->idx?>">수정</a>
-                <a href="#!" onclick="delread(<?=$idx?>); return false;"> 삭제</a>
-                <a href="./list.php"> 목록</a>
+                <?php if(isset($_SESSION['userid']) == $row->username) {
+                    echo "<a href='./update.php?idx=<?php echo $row->idx?>'> <button> 수정 </button></a>
+                    <a href='#!' onclick='delread(<?=$idx?>); return false;'> <button> 삭제 </button></a>
+                    <a href='./list.php'> <button> 목록 </button></a>";
+                }
+                else{
+                    echo "<button>추천</button> <button>답변</button>";
+                } ?>
+                
             </div>
             <ul class="answer">
                 <li>

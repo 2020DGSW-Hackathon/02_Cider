@@ -18,17 +18,27 @@
         <div class="Sign-img">
             <img src="../assets/images/Coworking.png" />
         </div>
-        <div class="inputs">
-            <form method="post" action="">
+        <div class="inputs2">
+            <form method="post" action="" class="register">
                 <input type="hidden" name="action" value="register">
                 <div class="login_ment">
                     회원가입으로 사이다와 함께 해주세요!
                 </div>
                 <div>
+                    <div class="id">username:</div>
+                    <input
+                        type="text"
+                        name="username"
+                        class="input"
+                        placeholder="이름을 입력하세요"
+                    />
+                </div>
+                <div>
                     <div class="id">ID:</div>
                     <input
-                        type="id"
+                        type="text"
                         class="input"
+                        name="id"
                         placeholder="아이디를 입력하세요"
                     />
                 </div>
@@ -37,13 +47,14 @@
                     <input
                         type="password"
                         class="input"
+                        name="password"
                         placeholder="비밀번호를 입력하세요"
                     />
                 </div>
                 <div class="grade">
-                    학년<input type="text" class="select_school_id" />
-                    반<input type="text" class="select_school_id" />
-                    번호<input type="text" class="select_school_id" />
+                    학년<input type="text" class="select_school_id " name="grade" />
+                    반<input type="text" class="select_school_id" name="class" />
+                    번호<input type="text" class="select_school_id" name="number" />
                 </div>
                 <input
                     type="submit"

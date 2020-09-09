@@ -17,7 +17,7 @@ switch ($action){
       number = ? ;
     ";
       $execArr = [$username, $id, $password, $grade, $class, $number];
-      $url = "../index.php";
+      $url = "login.php";
       alert($username, "님 회원가입이 완료되었습니다.");
       break; 
         

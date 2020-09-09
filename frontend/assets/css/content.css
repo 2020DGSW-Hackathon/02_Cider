@@ -137,3 +137,18 @@ li {
     margin: 20px 25px 0px 25px;
     color: #0d010d;
 }
+
+button {
+    width: 85px;
+    height: 35px;
+    background-color: #dbdbdb;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;      
+  }
+  
+  button:hover {
+    background-color: #bebebe;
+  }
