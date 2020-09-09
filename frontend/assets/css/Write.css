@@ -56,11 +56,15 @@ textarea {
 button {
     width: 85px;
     height: 35px;
-    background-color: #f1f1f1;
+    background-color: #dbdbdb;
     border: none;
     border-radius: 25px;
     font-size: 16px;
     position: relative;
     top:20px;         
     cursor: pointer;      
+}
+
+button:hover {
+    background-color: #bebebe;
 }
