@@ -5,12 +5,15 @@
 li {
     list-style: none;
 }
-body {
+
+.wrap{
     display: flex;
 }
+
 .left_contents {
     display: flex;
     flex-direction: column;
+    float: left;
 }
 .profile_box {
     margin-top: 140px;

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/content.css" />
+
   </head>
   <body>
     <?php if(!isset($_SESSION['userid'])) {
@@ -16,7 +18,7 @@
         <a href="../index.php"><div class="menu-item" onclick="display(event,'web')">WEB</div><a>
       </li>
       <li>
-      <a href="window.php"><div class="menu-item" onclick="display(event,'windows')">
+      <a href="windows.php"><div class="menu-item" onclick="display(event,'windows')">
           WINDOWS
         </div><a>
       </li>
@@ -40,6 +42,36 @@
       <div class="menu-item-underline"></div>
       </li>
     </ul>
+
+    <div class="left_contents">
+    <div class="profile_box">
+        <img
+            class="profile_picture"
+            src="https://www.macmillandictionary.com/us/external/slideshow/full/Grey_full.png"
+            alt="프로필 사진"
+        />
+        <span class="student_name_number_wrap">
+            <span class="student_name"><?= $_SESSION['username'] ?></span>
+            <span class="student_number"><?= $_SESSION['userinfo']['grade']?>학년 <?= $_SESSION['userinfo']['class']?>반 <?= $_SESSION['userinfo']['number']?>번</span>
+        </span>
+        <div class="student_info">
+            <div>대구소프트웨어 고등학교 재학생</div>
+            <div>관심 분야 : WEB </div>
+        </div>
+    </div>
+    <div class="profile_box grade_div">
+                <h1>학년별 질문 보기</h1>
+                <div>
+                    <input type="checkbox" value="1" class="grade" />1학년
+                </div>
+                <div>
+                    <input type="checkbox" value="2" class="grade" />2학년
+                </div>
+                <div>
+                    <input type="checkbox" value="3" class="grade" />3학년
+                </div>
+            </div>
+</div>
 
     <div class="CardList">
       <?php
