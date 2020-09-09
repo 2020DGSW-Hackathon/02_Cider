@@ -1,0 +1,109 @@
+@import "/frontend/reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Noto Sans KR", sans-serif;
+    user-select: none;
+    display: inline;
+}
+form {
+    margin-top: 130px;
+    float: right;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(13, 1, 13, 1);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(13, 1, 13, 1);
+    box-shadow: 0px 1px 3px 0px rgba(13, 1, 13, 1);
+    width: 600px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.Sign-img img {
+    margin: 300px 100px 0px 100px;
+    width: 600px;
+    height: 500px;
+}
+
+.id,
+.pw {
+    font-size: 20px;
+}
+.id {
+    margin-right: 10px;
+}
+.login_ment {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #848484;
+}
+.signUp {
+    margin-top: 40px;
+}
+.input {
+    padding: 8px;
+    width: 400px;
+    font-size: 25px;
+    outline: none;
+    border: 0px;
+    background: white;
+    transition: 0.3s ease;
+    border: 2px solid #848484;
+    border-radius: 5px;
+    margin: 10px;
+}
+a {
+    text-decoration: none;
+    color: #848484;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 1px solid #848484;
+}
+.input:visited {
+    background: black;
+}
+.input:focus:not(.submit_button) {
+    border: 2px solid #04e889;
+}
+.input::placeholder {
+    font-size: 20px;
+}
+.wrap-background {
+    width: 500px;
+}
+.submit_button {
+    background: rgb(0, 210, 216);
+    background: linear-gradient(
+        90deg,
+        rgba(0, 210, 216, 1) 0%,
+        rgba(4, 232, 137, 1) 100%
+    );
+    color: white;
+    margin-top: 50px;
+    border: 0px;
+    font-weight: bold;
+}
+.select_school_id {
+    border: 2px solid #848484;
+    background-color: white;
+    border-radius: 5px;
+    width: 50px;
+    height: 40px;
+    margin: 30px;
+    outline: none;
+    transition: 0.3s ease;
+    font-size: 20px;
+    padding: 10px;
+}
+.select_school_id:focus {
+    border: 2px solid #04e889;
+}
+.submit_button:hover {
+    background-color: #04e889;
+    cursor: pointer;
+}

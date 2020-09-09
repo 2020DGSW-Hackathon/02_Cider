@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+* {
+    font-family: "Noto Sans KR", sans-serif;
+}
+li {
+    list-style: none;
+}
+body {
+    display: flex;
+}
+.left_contents {
+    display: flex;
+    flex-direction: column;
+}
+.profile_box {
+    margin-top: 140px;
+    width: 400px;
+    height: 200px;
+    border-top: 3px solid #f1f1f1;
+    border-bottom: 3px solid #f1f1f1;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.grade_div {
+    margin-top: 50px;
+}
+.grade {
+    border: 1px solid black;
+}
+.student_name_number_wrap {
+    margin-bottom: 100px;
+}
+.student_name {
+    font-weight: bold;
+}
+.student_info {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: gray;
+    overflow: hidden;
+}
+.content {
+    margin-top: 140px;
+}
+.question {
+    width: 1000px;
+    height: 450px;
+    border-bottom: 3px solid #f1f1f1;
+    border-top: 3px solid #f1f1f1;
+    background: white;
+}
+.answer {
+    width: 900px;
+    height: 300px;
+    background: white;
+}
+.profile {
+    display: flex;
+}
+.profile_picture {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 15px 0 0 15px;
+}
+.icon {
+    padding: 10px;
+    margin-left: 20px;
+}
+.name {
+    margin-left: 5px;
+    margin-top: 35px;
+    font-weight: bolder;
+    font-size: 17px;
+    font-style: Noto Sans KR;
+    color: #0d010d;
+}
+.students_id {
+    margin-left: 8px;
+    margin-top: 39px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #848484;
+}
+.metoo_content {
+    margin-left: 500px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #848484;
+    display: flex;
+}
+
+.metoo {
+    margin-top: 10px;
+    margin-right: 3px;
+}
+
+.star {
+    width: 40px;
+    height: 40px;
+}
+
+.title_name {
+    font-size: 30px;
+    font-weight: 545;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #0d010d;
+}
+
+.write_date {
+    font-size: 14px;
+    font-weight: bold;
+    color: #848484;
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+.question_write {
+    width: 800px;
+    height: 180px;
+    padding: 10px;
+    margin: 20px 25px 0px 25px;
+    color: #0d010d;
+}
+
+.answer_write {
+    width: 800px;
+    height: 180px;
+    padding: 10px;
+    margin: 20px 25px 0px 25px;
+    color: #0d010d;
+}
